@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <name>Super pub</name>
+    <location>Minsk</location>
+    <emails>sgasdg@gmail.com</emails>
+    <emails>aaaaasfs@gmail.com</emails>
+    <emails>bbbesfwef@gmail.com</emails>
+    <goods>
+        <id>0</id>
+        <name>Beer №1</name>
+        <country>DE</country>
+        <year>2004-10-25</year>
+        <price>45</price>
+        <visible>true</visible>
+    </goods>
+    <goods>
+        <id>1</id>
+        <name>Beer №2</name>
+        <country>RU</country>
+        <year>2010-10-25</year>
+        <price>534</price>
+        <visible>true</visible>
+    </goods>
+    <goods>
+        <id>2</id>
+        <name>Beer №3</name>
+        <country>BY</country>
+        <year>2012-10-25</year>
+        <price>12</price>
+        <visible>true</visible>
+    </goods>
+    <goods>
+        <id>3</id>
+        <name>Beer №4</name>
+        <country>CZ</country>
+        <year>2015-10-25</year>
+        <price>34</price>
+        <visible>true</visible>
+    </goods>
+    <goods>
+        <id>4</id>
+        <name>Beer №5</name>
+        <country>AU</country>
+        <year>2007-10-25</year>
+        <price>54</price>
+        <visible>true</visible>
+    </goods>
+</root>

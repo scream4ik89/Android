@@ -1,0 +1,4 @@
+Дмитрий; 28; true; Мужчина; Головин; Валерьевич; 
+Наталья; 25; true; Женщиа; Золотько; Владимировна; 
+dasd; 23; true; d; asdas; dasd; 
+asdasd; 25; true; m; asfsaf; asfasf; 
