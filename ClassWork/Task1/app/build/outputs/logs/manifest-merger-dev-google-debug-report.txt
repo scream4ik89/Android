@@ -1,0 +1,95 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:1:1-22:12
+INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:1:1-22:12
+INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:1:1-22:12
+INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:1:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\8c75f9fc6a7e4715f225e20f8fd6c700\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\10d9240aab12bee2b14a550cdcb82a84\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\d5ea786102c37cdf5485d17306b14705\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\e2661006af35ec8ccbada58926725b17\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\7550cd56d75e8e59ed0c8a69bf37494e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\984331249693e66481e0c9386cebfdd6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\165f7b14d753a92f658e162753a30737\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\b347a09e1d04314f059a72a42a7d27f2\AndroidManifest.xml:17:1-24:12
+INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:1:1-22:12
+INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:1:1-22:12
+INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:1:1-22:12
+	package
+		ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:2:5-42
+		INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml
+		ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:1:1-22:12
+		INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml
+		ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:1:1-22:12
+		INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:4:5-21:19
+	android:supportsRtl
+		ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:9:9-35
+	android:label
+		ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:7:9-41
+	android:roundIcon
+		ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:8:9-54
+	android:icon
+		ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:6:9-43
+	android:allowBackup
+		ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:5:9-35
+	android:theme
+		ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:10:9-40
+activity#com.itacademy.myapplication.ClassWork1.ClassWork1Activity
+ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:11:9-16:20
+	android:name
+		ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:11:19-64
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:12:13-15:29
+action#android.intent.action.MAIN
+ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:13:17-68
+	android:name
+		ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:13:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:14:17-76
+	android:name
+		ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:14:27-74
+activity#com.itacademy.myapplication.ClassWork2.ClassWork2Activity
+ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:17:9-19:74
+	android:parentActivityName
+		ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:19:13-72
+	android:name
+		ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml:18:13-58
+uses-sdk
+INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml
+INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\8c75f9fc6a7e4715f225e20f8fd6c700\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\8c75f9fc6a7e4715f225e20f8fd6c700\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\10d9240aab12bee2b14a550cdcb82a84\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\10d9240aab12bee2b14a550cdcb82a84\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\d5ea786102c37cdf5485d17306b14705\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\d5ea786102c37cdf5485d17306b14705\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\e2661006af35ec8ccbada58926725b17\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\e2661006af35ec8ccbada58926725b17\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\7550cd56d75e8e59ed0c8a69bf37494e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\7550cd56d75e8e59ed0c8a69bf37494e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\984331249693e66481e0c9386cebfdd6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\984331249693e66481e0c9386cebfdd6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\165f7b14d753a92f658e162753a30737\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\165f7b14d753a92f658e162753a30737\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\b347a09e1d04314f059a72a42a7d27f2\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\b347a09e1d04314f059a72a42a7d27f2\AndroidManifest.xml:20:5-22:41
+INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml
+INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml
+		ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml
+		ADDED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Repository\java-android\Android\ClassWork\Task1\app\src\main\AndroidManifest.xml

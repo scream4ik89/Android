@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Мое приложение</string>
+    <string name="button_one">Кнопка один</string>
+    <string name="button_two">Кнопка два</string>
+</resources>

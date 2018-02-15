@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#99991212"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srcCompat="@drawable/ic_adb_black_24dp"
+    android:background="#4b83ba"/>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="118dp"
+        android:layout_height="90dp"
+        android:background="#15ea08"
+        android:textSize="20sp"
+        android:text="@string/button_one"
+        android:textAllCaps="false"
+        android:textColor="#f9f10606"
+        android:layout_margin="@dimen/main_activity_margin"/>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:id="@+id/button2"
+        android:layout_width="118dp"
+        android:layout_height="90dp"
+        android:text="Button2"
+        android:textAllCaps="false"
+        android:layout_below="@id/button1"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="118dp"
+        android:layout_height="90dp"
+        android:layout_toEndOf="@id/button2"
+        android:background="#f0f404"
+        android:text="Button3"
+        android:textAllCaps="false"
+        android:textColor="#f90620ae"
+        android:layout_below="@id/button1"
+        />
+
+</RelativeLayout>
