@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button" />
@@ -14,18 +14,24 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="215dp" />
+        android:layout_height="235dp"
+        />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:autoLink="web"
+        android:hint="Введите ссылку на картинку"
+        android:gravity="center"
+        android:inputType="textUri"/>
 
-    <TextView
-        android:id="@+id/textViewDz3"
+    <Button
+        android:id="@+id/buttonString"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="Кнопка вывода строки через BuildConfig"
+        android:textAllCaps="false"
+        android:textSize="20dp"/>
 
 </LinearLayout>

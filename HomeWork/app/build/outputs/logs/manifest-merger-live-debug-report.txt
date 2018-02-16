@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-25:12
-INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-25:12
-INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-25:12
-INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-25:12
+ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-29:12
+INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-29:12
+INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-29:12
+INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-29:12
 MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\leakcanary-android-1.5.4.aar\9f181a0a22a61710384770c70af61e05\AndroidManifest.xml:17:1-61:12
 MERGED from [com.github.bumptech.glide:glide:4.6.1] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\glide-4.6.1.aar\72bf4abc1688596d12f1bec98fda770b\AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\8c75f9fc6a7e4715f225e20f8fd6c700\AndroidManifest.xml:17:1-22:12
@@ -16,25 +16,35 @@ MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Scream
 MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\984331249693e66481e0c9386cebfdd6\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\165f7b14d753a92f658e162753a30737\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\b347a09e1d04314f059a72a42a7d27f2\AndroidManifest.xml:17:1-24:12
-INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-25:12
-INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-25:12
-INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-25:12
+INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-29:12
+INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-29:12
+INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-29:12
 	package
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:2:5-37
-		INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:2:5-37
+		INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-25:12
-		INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-29:12
+		INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-25:12
-		INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-29:12
+		INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:3:5-67
+	android:name
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:3:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:4:5-81
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\leakcanary-android-1.5.4.aar\9f181a0a22a61710384770c70af61e05\AndroidManifest.xml:24:5-81
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\leakcanary-android-1.5.4.aar\9f181a0a22a61710384770c70af61e05\AndroidManifest.xml:24:5-81
+	android:name
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:4:22-78
 application
-ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:4:5-23:19
+ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:5:5-27:19
 MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\leakcanary-android-1.5.4.aar\9f181a0a22a61710384770c70af61e05\AndroidManifest.xml:26:5-59:19
 MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\leakcanary-android-1.5.4.aar\9f181a0a22a61710384770c70af61e05\AndroidManifest.xml:26:5-59:19
 MERGED from [com.github.bumptech.glide:glide:4.6.1] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\glide-4.6.1.aar\72bf4abc1688596d12f1bec98fda770b\AndroidManifest.xml:11:5-20
@@ -44,47 +54,53 @@ MERGED from [com.squareup.leakcanary:leakcanary-analyzer:1.5.4] C:\Users\Scream\
 MERGED from [com.github.bumptech.glide:gifdecoder:4.6.1] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.6.1.aar\337648d41299052c21e1e36c7e19ce68\AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.6.1] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.6.1.aar\337648d41299052c21e1e36c7e19ce68\AndroidManifest.xml:9:5-20
 	android:supportsRtl
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:7:9-41
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:6:9-43
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:5:9-35
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:10:9-40
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:11:9-40
 activity#com.itacademy.homework.homework_switch.SwitcherActivity
-ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:11:9-16:20
+ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:12:9-17:20
 	android:name
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:11:19-67
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:12:19-67
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:12:13-15:29
+ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:13:13-16:29
 action#android.intent.action.MAIN
-ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:13:17-68
+ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:14:17-68
 	android:name
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:13:25-66
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:14:17-76
+ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:15:17-76
 	android:name
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:14:27-74
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:15:27-74
 activity#com.itacademy.homework.homework1.HomeWork1Activity
-ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:17:9-19:77
+ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:18:9-20:77
 	android:parentActivityName
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:19:13-75
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:20:13-75
 	android:name
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:18:13-56
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:19:13-56
 activity#com.itacademy.homework.homework2.HomeWork2Activity
-ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:20:9-22:77
+ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:21:9-23:77
 	android:parentActivityName
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:22:13-75
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:23:13-75
 	android:name
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:21:13-56
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:22:13-56
+activity#com.itacademy.homework.homework3.HomeWork3Activity
+ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:24:9-26:77
+	android:parentActivityName
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:26:13-75
+	android:name
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:25:13-56
 uses-sdk
-INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml
-INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml
+INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml
+INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml
 MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\leakcanary-android-1.5.4.aar\9f181a0a22a61710384770c70af61e05\AndroidManifest.xml:20:5-44
 MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\leakcanary-android-1.5.4.aar\9f181a0a22a61710384770c70af61e05\AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:glide:4.6.1] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\glide-4.6.1.aar\72bf4abc1688596d12f1bec98fda770b\AndroidManifest.xml:7:5-9:41
@@ -109,25 +125,21 @@ MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Scream\.gradle\
 MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\165f7b14d753a92f658e162753a30737\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\b347a09e1d04314f059a72a42a7d27f2\AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\b347a09e1d04314f059a72a42a7d27f2\AndroidManifest.xml:20:5-22:41
-INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml
-INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml
+INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml
+INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml
-		ADDED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml
+		ADDED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\leakcanary-android-1.5.4.aar\9f181a0a22a61710384770c70af61e05\AndroidManifest.xml:23:5-80
-IMPLIED from E:\Repository\java-android\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-25:12 reason: com.squareup.leakcanary requested WRITE_EXTERNAL_STORAGE
+IMPLIED from E:\Repository\Android\HomeWork\app\src\main\AndroidManifest.xml:1:1-29:12 reason: com.squareup.leakcanary requested WRITE_EXTERNAL_STORAGE
 	android:name
 		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\leakcanary-android-1.5.4.aar\9f181a0a22a61710384770c70af61e05\AndroidManifest.xml:23:22-77
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\leakcanary-android-1.5.4.aar\9f181a0a22a61710384770c70af61e05\AndroidManifest.xml:24:5-81
-	android:name
-		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\leakcanary-android-1.5.4.aar\9f181a0a22a61710384770c70af61e05\AndroidManifest.xml:24:22-78
 service#com.squareup.leakcanary.internal.HeapAnalyzerService
 ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\Scream\.gradle\caches\transforms-1\files-1.1\leakcanary-android-1.5.4.aar\9f181a0a22a61710384770c70af61e05\AndroidManifest.xml:27:9-30:45
 	android:process
