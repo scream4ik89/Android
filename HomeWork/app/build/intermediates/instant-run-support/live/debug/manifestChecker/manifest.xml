@@ -40,6 +40,15 @@
         <activity
             android:name="com.itacademy.homework.homework3.HomeWork3Activity"
             android:parentActivityName="com.itacademy.homework.homework_switch.SwitcherActivity" />
+        <activity
+            android:name="com.itacademy.homework.homework4.HomeWork4Activity"
+            android:parentActivityName="com.itacademy.homework.homework_switch.SwitcherActivity" />
+        <activity
+            android:name="com.itacademy.homework.homework4.HomeWork4_1Activity"
+            android:parentActivityName="com.itacademy.homework.homework4.HomeWork4Activity" />
+        <activity
+            android:name="com.itacademy.homework.homework4.HomeWork4_2Activity"
+            android:parentActivityName="com.itacademy.homework.homework4.HomeWork4Activity" />
 
         <service
             android:name="com.squareup.leakcanary.internal.HeapAnalyzerService"

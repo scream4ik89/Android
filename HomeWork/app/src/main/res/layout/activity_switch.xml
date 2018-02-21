@@ -33,6 +33,14 @@
         android:layout_height="wrap_content"
         android:text="DZ3"
         android:background="#1bef1b"/>
+
+    <Button
+        android:layout_margin="25dp"
+        android:id="@+id/dz4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DZ4"
+        android:background="#2cccb7"/>
 </LinearLayout>
 
 </ScrollView>

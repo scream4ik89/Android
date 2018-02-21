@@ -21,7 +21,7 @@ public class HomeWork3Activity extends AppCompatActivity{
     private Button buttonString, buttonImage;
     private ImageView imageView;
     private EditText editText;
-    private String link = getResources().getString(R.string.url_dz3);
+    private String link;
     @Override
     protected void onCreate(@Nullable final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,13 +34,14 @@ public class HomeWork3Activity extends AppCompatActivity{
 
             }
         });
+        link = getResources().getString(R.string.url_dz3);
         editText = findViewById(R.id.editText);
         imageView = findViewById(R.id.imageView);
         buttonImage = findViewById(R.id.buttonImage);
         buttonImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (editText.getText() != null){
+                if (editText.getText().length() != 0){
                     Glide.with(HomeWork3Activity.this).load
                             (editText.getText().toString())
                             .into(imageView);
