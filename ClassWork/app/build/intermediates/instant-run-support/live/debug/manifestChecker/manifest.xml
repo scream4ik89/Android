@@ -9,6 +9,7 @@
         android:targetSdkVersion="27" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -37,6 +38,15 @@
             android:name="com.itacademy.myapplication.classwork5.ClassWork5Activity"
             android:exported="true"
             android:parentActivityName="com.itacademy.myapplication.ClassWork1.ClassWork1Activity" />
+        <activity
+            android:name="com.itacademy.myapplication.classwork6.ClassWork6Activity"
+            android:exported="true" />
+        <activity
+            android:name="com.itacademy.myapplication.classwork7.ClassWork7Activity"
+            android:exported="true" />
+        <activity
+            android:name="com.itacademy.myapplication.classwork7.ClassWork7_2Activity"
+            android:exported="true" />
 
         <receiver android:name="com.itacademy.myapplication.classwork5.MyReciver" >
             <intent-filter>

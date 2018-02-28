@@ -14,6 +14,25 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Scream\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.0.2.aar\\659939369b677fd296c8514e12f17ec6\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "232"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "390",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "567"
+                    }
+                },
+                {
                     "source": "E:\\Repository\\Android\\ClassWork\\app\\src\\main\\res\\values-land\\dimen.xml",
                     "from": {
                         "startLines": "2",

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Feb 16 21:03:06 MSK 2018
+#Fri Feb 23 21:09:27 MSK 2018
 2.base=E\:\\Repository\\Android\\ClassWork\\app\\build\\intermediates\\transforms\\dexMerger\\live\\debug\\15
 5.set=DEX
 0.path=classes.dex
@@ -7,7 +7,7 @@
 3.base=E\:\\Repository\\Android\\ClassWork\\app\\build\\intermediates\\transforms\\dexMerger\\live\\debug\\14
 2.set=DEX
 1.path=classes.dex
-4.base=E\:\\Repository\\Android\\ClassWork\\app\\build\\intermediates\\transforms\\dexMerger\\live\\debug\\17
+4.base=E\:\\Repository\\Android\\ClassWork\\app\\build\\intermediates\\transforms\\dexMerger\\live\\debug\\11
 count=6
 5.baseType=DIRECTORY
 2.path=classes.dex

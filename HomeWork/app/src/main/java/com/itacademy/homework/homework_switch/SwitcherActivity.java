@@ -12,9 +12,10 @@ import com.itacademy.homework.homework1.HomeWork1Activity;
 import com.itacademy.homework.homework2.HomeWork2Activity;
 import com.itacademy.homework.homework3.HomeWork3Activity;
 import com.itacademy.homework.homework4.HomeWork4Activity;
+import com.itacademy.homework.homework5.HomeWork5Activity;
 
 public class SwitcherActivity extends AppCompatActivity {
-    private Button button, button2, button3, button4;
+    private Button button, button2, button3, button4, button5;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -51,6 +52,14 @@ public class SwitcherActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(SwitcherActivity.this, HomeWork4Activity.class));
+                overridePendingTransition(R.anim.bottom_in, R.anim.alpha);
+            }
+        });
+        button5 = findViewById(R.id.dz5);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SwitcherActivity.this, HomeWork5Activity.class));
                 overridePendingTransition(R.anim.bottom_in, R.anim.alpha);
             }
         });

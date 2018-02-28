@@ -1,6 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.itacademy.myapplication">
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -26,7 +27,14 @@
             android:name=".classwork5.ClassWork5Activity"
             android:parentActivityName=".ClassWork1.ClassWork1Activity"
             android:exported="true"/>
-<receiver android:name=".classwork5.MyReciver">
+        <activity
+            android:name=".classwork6.ClassWork6Activity"
+            android:exported="true"/>
+        <activity
+            android:name=".classwork7.ClassWork7Activity"
+            android:exported="true"/>
+
+        <receiver android:name=".classwork5.MyReciver">
     <intent-filter>
         <action android:name="android.intent.action.AIRPLANE_MODE"/>
     </intent-filter>

@@ -44,6 +44,7 @@ public class ClassWork5Activity extends AppCompatActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             Log.e("AAAA", "Message from MY_ACTION_MESSAGE");
+            boolean isWiFi = intent.getBooleanExtra("state", true);
 //            boolean isAirplaneModeOn = intent.getBooleanExtra("state",
 //                    false);
 //            if (isAirplaneModeOn) {
