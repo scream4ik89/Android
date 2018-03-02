@@ -11,10 +11,10 @@ import com.itacademy.homework.homework6.manager.Sort.SortByCountry;
 import com.itacademy.homework.homework6.manager.Sort.SortByName;
 import com.itacademy.homework.homework6.manager.Sort.SortByPrice;
 import com.itacademy.homework.homework6.manager.Sort.SortByYear;
-import model.Exception.NoFile;
-import model.Exception.NoObject;
-import model.Input;
-import model.entity.Pub;
+import com.itacademy.homework.homework6.model.Exception.NoFile;
+import com.itacademy.homework.homework6.model.Exception.NoObject;
+import com.itacademy.homework.homework6.model.Input;
+import com.itacademy.homework.homework6.model.entity.Pub;
 
 import java.io.File;
 import java.io.IOException;

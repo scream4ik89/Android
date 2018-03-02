@@ -31,7 +31,7 @@ public class HomeWork5Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homework5);
         wi_fiOn = findViewById(R.id.WiFiOn);
-        wi_fiOff = findViewById(R.id.WiFiOff);
+        wi_fiOff = findViewById(R.id.WiFiOn);
         manager = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
         myReciver = new BroadcastReceiver() {
             @Override

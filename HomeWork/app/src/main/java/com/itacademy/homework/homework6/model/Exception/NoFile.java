@@ -1,4 +1,4 @@
-package model.Exception;
+package com.itacademy.homework.homework6.model.Exception;
 
 public class NoFile extends Exception {
 

@@ -1,6 +1,6 @@
-package manager.Search;
+package com.itacademy.homework.homework6.manager.Search;
 
-import model.entity.Beer;
+import com.itacademy.homework.homework6.model.entity.Beer;
 
 import java.io.BufferedReader;
 import java.io.IOException;

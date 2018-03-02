@@ -1,4 +1,4 @@
-package model.entity;
+package com.itacademy.homework.homework6.model.entity;
 
 import java.util.ArrayList;
 

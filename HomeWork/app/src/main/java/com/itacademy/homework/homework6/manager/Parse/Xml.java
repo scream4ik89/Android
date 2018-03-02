@@ -1,7 +1,7 @@
-package manager.Parse;
+package com.itacademy.homework.homework6.manager.Parse;
 
-import model.entity.Beer;
-import model.entity.Pub;
+import com.itacademy.homework.homework6.model.entity.Beer;
+import com.itacademy.homework.homework6.model.entity.Pub;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

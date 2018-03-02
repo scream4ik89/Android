@@ -1,4 +1,4 @@
-package model;
+package com.itacademy.homework.homework6.model;
 
 import java.io.BufferedReader;
 import java.io.IOException;

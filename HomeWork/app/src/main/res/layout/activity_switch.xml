@@ -43,12 +43,20 @@
         android:background="#2cccb7"/>
 
     <Button
+    android:layout_margin="25dp"
+    android:id="@+id/dz5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="DZ5"
+    android:background="#1a38cf"/>
+
+    <Button
         android:layout_margin="25dp"
-        android:id="@+id/dz5"
+        android:id="@+id/dz7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DZ5"
-        android:background="#1a38cf"/>
+        android:text="DZ7"
+        android:background="#f40021"/>
 </LinearLayout>
 
 </ScrollView>

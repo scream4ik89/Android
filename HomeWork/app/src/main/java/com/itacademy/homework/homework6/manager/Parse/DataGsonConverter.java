@@ -1,4 +1,4 @@
-package manager.Parse;
+package com.itacademy.homework.homework6.manager.Parse;
 
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;

@@ -1,8 +1,8 @@
-package manager.Parse;
+package com.itacademy.homework.homework6.manager.Parse;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import model.entity.Pub;
+import com.itacademy.homework.homework6.model.entity.Pub;
 
 import java.io.BufferedReader;
 import java.io.File;

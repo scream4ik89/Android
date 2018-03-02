@@ -1,6 +1,6 @@
-package manager.Sort;
+package com.itacademy.homework.homework6.manager.Sort;
 
-import model.entity.Beer;
+import com.itacademy.homework.homework6.model.entity.Beer;
 
 import java.util.Comparator;
 import java.util.Date;
