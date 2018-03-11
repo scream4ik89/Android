@@ -36,6 +36,9 @@
         <activity
             android:name=".classwork8.ClassWork8Activity"
             android:exported="true"/>
+        <activity
+            android:name=".classwork9.ClassWork9Activity"
+            android:exported="true"/>
         <receiver android:name=".classwork5.MyReciver">
 
     <intent-filter>

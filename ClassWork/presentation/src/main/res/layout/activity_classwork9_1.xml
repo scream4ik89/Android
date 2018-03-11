@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<data>
+    <import type="android.view.View">
+    </import>
+    <variable
+        name="myEntity"
+        type="com.itacademy.myapplication.classwork9.MyEntitty">
+    </variable>
+</data>
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#3772ac"
+    android:text="@{myEntity.text}"
+    android:textSize="50dp"
+    android:visibility="@{myEntity.buttonVisible ? View.VISIBLE : View.GONE}"
+    android:layout_gravity="center"
+    android:layout_marginTop="25dp"
+    android:id="@+id/text_view_binding"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3772ac"
+        android:text="А теперь не работает"
+        android:textSize="50dp"
+        android:visibility="@{myEntity.buttonVisible ? View.GONE : View.VISIBLE}"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:id="@+id/text_view_binding3"
+        android:gravity="center"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#3de60a"
+    android:text="@{myEntity.textButton}"
+    android:layout_gravity="center"
+    android:layout_marginTop="25dp"
+    android:textSize="50dp"
+    android:textAllCaps="false"
+    android:onClick="@{myEntity::buttonClick}"/>
+</LinearLayout></layout>

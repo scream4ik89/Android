@@ -11,10 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import com.itacademy.homework.R;
+
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
-import io.reactivex.functions.Predicate;
+
 
 
 public class OneFragment extends Fragment {
@@ -50,28 +51,11 @@ public class OneFragment extends Fragment {
     @Override
     public void onResume() { // подписываемся на изменения
         super.onResume();
-        disposable = publishContract.getObservable()
-                .doOnNext(new Consumer<Integer>() { //можно делать промежуточные действия
-                    @Override
-                    public void accept(Integer integer) throws Exception {
-                    }
-                })
-                .map(new Function<Integer, String>() { //превращает один тип данных в другой
-                    @Override
-                    public String apply(Integer integer) throws Exception {
-                        return String.valueOf(integer);
-                    }
-                })
-                .doOnNext(new Consumer<String>() {
-                    @Override
-                    public void accept(String s) throws Exception {
-                    }
-                })
-                .subscribe(new Consumer<String>() {
+        disposable =  publishContract.getObservable()
+                .subscribe(new Consumer<Integer>() {
                                @Override
-                               //сюда приходят данные
-                               public void accept(String text) throws Exception {
-                                   textView.setText(text);
+                               public void accept(Integer text) throws Exception {
+                                   textView.setText(String.valueOf(text));
                                }
                            }
                         , new Consumer<Throwable>() {

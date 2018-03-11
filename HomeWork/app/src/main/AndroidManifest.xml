@@ -42,8 +42,15 @@
             android:name=".homework5.HomeWork5Activity"
             android:parentActivityName=".homework_switch.SwitcherActivity" />
         <activity
+            android:name=".homework6.HomeWork6Activity"
+            android:parentActivityName=".homework_switch.SwitcherActivity" />
+        <activity
             android:name=".homework7.HomeWork7Activity"
             android:parentActivityName=".homework_switch.SwitcherActivity" />
+        <activity
+            android:name=".homework8.HomeWork8Activity"
+            android:parentActivityName=".homework_switch.SwitcherActivity"
+            android:exported="true"/>
         <service
             android:name=".homework5.MyServiceWiFi"
             android:enabled="true"

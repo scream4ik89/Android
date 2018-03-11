@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#9cbee1"
-        android:text="Button change fragment"
+        android:text="Click"
         android:textSize="25dp"
         android:gravity="center"/>
 

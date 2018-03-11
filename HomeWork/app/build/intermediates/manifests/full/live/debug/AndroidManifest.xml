@@ -56,7 +56,14 @@
             android:name="com.itacademy.homework.homework5.HomeWork5Activity"
             android:parentActivityName="com.itacademy.homework.homework_switch.SwitcherActivity" />
         <activity
+            android:name="com.itacademy.homework.homework6.HomeWork6Activity"
+            android:parentActivityName="com.itacademy.homework.homework_switch.SwitcherActivity" />
+        <activity
             android:name="com.itacademy.homework.homework7.HomeWork7Activity"
+            android:parentActivityName="com.itacademy.homework.homework_switch.SwitcherActivity" />
+        <activity
+            android:name="com.itacademy.homework.homework8.HomeWork8Activity"
+            android:exported="true"
             android:parentActivityName="com.itacademy.homework.homework_switch.SwitcherActivity" />
 
         <service

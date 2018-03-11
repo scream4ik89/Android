@@ -1,15 +1,13 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion rootProject.compileSdkVersion
 
 
 
     defaultConfig {
-        minSdkVersion 18
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
 
 
 
@@ -25,5 +23,9 @@ android {
 }
 
 dependencies {
-    implementation 'io.reactivex.rxjava2:rxjava:2.1.10'
+    def dependency = rootProject.ext.dependencies
+
+    api dependency.rxjava2
+
+
 }

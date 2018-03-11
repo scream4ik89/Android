@@ -1,5 +1,7 @@
 package com.itacademy.homework.homework6.manager.Download;
 
+import android.content.Context;
+
 import com.itacademy.homework.homework6.manager.Manager;
 
 import java.io.File;
@@ -11,50 +13,28 @@ import java.net.URL;
 /*
     класс для скачивания xml или json файла
      */
-public class Downloader implements Runnable{
-    String url;
-    public Downloader(String url) {
-        this.url = url;
+public class Downloader {
+    private String nameOfFile;
+    public Downloader(String nameOfFile) {
+        this.nameOfFile = nameOfFile;
     }
-
-    public synchronized void download(String urlAdress) {
-
-        try {
-            URL url = new URL(urlAdress);
-
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-
-            int responseCode = connection.getResponseCode();
-            if (responseCode == HttpURLConnection.HTTP_OK) {
-                File file;
-                if (urlAdress.contains(".json")) {
-                    file = new File( "pub.json");
-                } else {
-                    file = new File("pub.xml");
-                }
-
-                try (InputStream streamIn = connection.getInputStream();
-                     FileOutputStream streamOut = new FileOutputStream(file)) {
-
-                    byte[] buffer = new byte[2048];
-                    int read;
-                    while ((read = streamIn.read(buffer)) != -1) {
-                        streamOut.write(buffer, 0, read);
-                    }
-                    streamOut.close();
-                }
-                Manager.getInstance().setFile(file);
-            } else {
-                return;
+    public void downloadFile(String link) throws  IOException{
+        URL url = new URL(link);
+        HttpURLConnection httpURLConnection =
+                (HttpURLConnection) url.openConnection();
+        int responseCode = httpURLConnection.getResponseCode();
+        if (responseCode == HttpURLConnection.HTTP_OK){
+            InputStream inputStream = httpURLConnection.getInputStream();
+            File file = new File(nameOfFile);
+            FileOutputStream fileOutputStream = new FileOutputStream(file);
+            int byteRead = -1;
+            byte[] buffer = new byte[2048];
+            while ((byteRead = inputStream.read(buffer)) != -1){
+                fileOutputStream.write(buffer, 0, byteRead);
             }
-        } catch (IOException e) {
-            System.out.println("Отсутствует соеденение с интернетом, попробуйте позже" + e.getMessage());
-            return;
+        }else {
+            throw new IOException("Данные не найдены, response code = " + responseCode);
         }
-    }
 
-    @Override
-    public void run() {
-        download(url);
     }
 }
