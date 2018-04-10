@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="viewModel"
+            type="com.itacademy.presentation.presentation.screens.homework2.HW2ViewModel"/>
+    </data>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4c4d4e">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginRight="15dp">
+        <LinearLayout
+            android:padding="15dp"
+            android:id="@+id/Austria"
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorRed"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorRed"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="15dp"
+            android:id="@+id/Poland"
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorRed"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="15dp"
+            android:id="@+id/Italia"
+            android:layout_width="400dp"
+            android:layout_height="250dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorGreen"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorRed"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="15dp"
+            android:id="@+id/Columbia"
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/colorYellow"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorBlue" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorDarkRed" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="15dp"
+            android:id="@+id/Madagscar"
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#de363c"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#236431"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="15dp"
+            android:id="@+id/Tailand"
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorRed"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlue"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorRed"
+                android:layout_weight="1"/>
+        </LinearLayout>
+            <LinearLayout
+            android:padding="15dp"
+            android:id="@+id/Demmark"
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#d72228">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@color/colorWhite"
+                        android:layout_weight="1"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="9">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite"
+                        android:layout_weight="1"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</layout>

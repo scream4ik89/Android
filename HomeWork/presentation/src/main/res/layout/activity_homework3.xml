@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.itacademy.presentation.presentation.screens.homework3.HW3ViewModel"/>
+    </data>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buttonImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:onClick="@{()->viewModel.onClick()}"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:src="@{viewModel.url}"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:hint="Введите ссылку на картинку"
+        android:gravity="center"
+        android:inputType="textUri"
+        android:text="@={viewModel.userUrl}"/>
+
+    <ProgressBar
+        android:layout_width="70dp"
+        android:layout_height="69dp"
+        android:visibility="@{viewModel.progress? view.INVISIBLE:view.VISIBLE}" />
+
+</LinearLayout>
+</layout>

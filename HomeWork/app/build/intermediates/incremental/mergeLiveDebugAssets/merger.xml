@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="E:\Repository\Android\HomeWork\app\src\main\assets"/><source path="E:\Repository\Android\HomeWork\app\build\generated\assets\shaders\live\debug"/></dataSet><dataSet config="live"><source path="E:\Repository\Android\HomeWork\app\src\live\assets"/></dataSet><dataSet config="debug"><source path="E:\Repository\Android\HomeWork\app\src\debug\assets"/></dataSet><dataSet config="liveDebug"><source path="E:\Repository\Android\HomeWork\app\src\liveDebug\assets"/></dataSet></merger>

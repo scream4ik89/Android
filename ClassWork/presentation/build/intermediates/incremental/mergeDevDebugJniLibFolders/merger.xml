@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="E:\Repository\Android\ClassWork\presentation\src\main\jniLibs"/></dataSet><dataSet config="dev"><source path="E:\Repository\Android\ClassWork\presentation\src\dev\jniLibs"/></dataSet><dataSet config="debug"><source path="E:\Repository\Android\ClassWork\presentation\src\debug\jniLibs"/></dataSet><dataSet config="devDebug"><source path="E:\Repository\Android\ClassWork\presentation\src\devDebug\jniLibs"/></dataSet></merger>

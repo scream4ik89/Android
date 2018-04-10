@@ -1,0 +1,61 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itacademy.presentation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".presentation.screens.homework_switch.SwitcherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".presentation.screens.homework1.HomeWork1Activity"
+            android:parentActivityName=".presentation.screens.homework_switch.SwitcherActivity" />
+        <activity
+            android:name=".presentation.screens.homework2.HomeWork2Activity"
+            android:parentActivityName=".presentation.screens.homework_switch.SwitcherActivity" />
+        <activity
+            android:name=".presentation.screens.homework3.HomeWork3Activity"
+            android:parentActivityName=".presentation.screens.homework_switch.SwitcherActivity" />
+        <activity
+            android:name=".presentation.screens.homework4.HomeWork4Activity"
+            android:parentActivityName=".presentation.screens.homework_switch.SwitcherActivity" />
+        <activity
+            android:name=".presentation.screens.homework4.HomeWork4_1Activity"
+            android:parentActivityName=".presentation.screens.homework4.HomeWork4Activity" />
+        <activity
+            android:name=".presentation.screens.homework4.HomeWork4_2Activity"
+            android:parentActivityName=".presentation.screens.homework4.HomeWork4Activity" />
+        <activity
+            android:name=".presentation.screens.homework5.HomeWork5Activity"
+            android:parentActivityName=".presentation.screens.homework_switch.SwitcherActivity" />
+        <activity
+            android:name=".presentation.screens.homework6.HomeWork6Activity"
+            android:parentActivityName=".presentation.screens.homework_switch.SwitcherActivity" />
+        <activity
+            android:name=".presentation.screens.homework7.HomeWork7Activity"
+            android:parentActivityName=".presentation.screens.homework_switch.SwitcherActivity" />
+        <activity
+            android:name=".presentation.screens.homework8.HomeWork8Activity"
+            android:parentActivityName=".presentation.screens.homework_switch.SwitcherActivity"
+            android:exported="true"/>
+        <service
+            android:name=".presentation.screens.homework5.MyServiceWiFi"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

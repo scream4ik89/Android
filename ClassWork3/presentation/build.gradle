@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    /*rootProject - обращение к главному градл*/
+    compileSdkVersion rootProject.compileSdkVersion
+    defaultConfig {
+        applicationId "com.it_academy.presentation.classworkandroid"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    buildToolsVersion '27.0.3'
+}
+/*Верисии библиотек должны быть одинаковы или могут возникнуть проблемы v27.0.2*/
+/*если вместо implementation написать api(вместо implementation), то эту библиотеку будут видеть все слои которые работют с этим слоем*/
+dependencies {
+    def dependency = rootProject.ext.dependencies
+
+    implementation dependency.supportAppcompat
+    implementation dependency.supportDesign
+    implementation dependency.supportV4
+
+    implementation dependency.rxjava2Android
+
+    implementation dependency.archComponentsExtention
+    annotationProcessor dependency.archComponentsCompiler
+
+    implementation dependency.dagger
+    annotationProcessor dependency.daggerCompiler
+    implementation dependency.gson
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    /*это компилятор и его нужно подключпть подругому*/
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    annotationProcessor dependency.androidBindingCompiler
+    implementation dependency.adapterRX2
+    implementation dependency.converterGson
+
+    api project(path: ':data')
+
+}

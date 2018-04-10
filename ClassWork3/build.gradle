@@ -9,18 +9,12 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.0'
 
+
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
-allprojects {
-    repositories {
-        google()
-        jcenter()
-    }
-}
 ext{
-    glideVersion = '4.6.1'
     compileSdkVersion = 27
     minSdkVersion = 18
     targetSdkVersion = 27
@@ -39,8 +33,10 @@ ext{
     adapterRXVerson = '2.2.0'
     converterGsonVerson = '2.3.0'
     okhttpVersion = '3.10.0'
-    dependencies = [
 
+
+//это массив библиотек
+    dependencies = [
             supportAppcompat: "com.android.support:appcompat-v7:$buildToolsSdkVersion",
             supportDesign: "com.android.support:design:$buildToolsSdkVersion",
             supportV4: "com.android.support:support-v4:$buildToolsSdkVersion",
@@ -73,12 +69,24 @@ ext{
             okHttp: "com.squareup.okhttp3:okhttp:$okhttpVersion",
             okHttpLogging: "com.squareup.okhttp3:logging-interceptor:$okhttpVersion",
 
-             glide: "com.github.bumptech.glide:glide:$glideVersion",
-             glideCompiller: "com.github.bumptech.glide:compiler:$glideVersion"
+            room: "android.arch.persistence.room:runtime:$archComponentVersion",
+            roomCompiler: "android.arch.persistence.room:compiler:$archComponentVersion",
+            roomRx: "android.arch.persistence.room:rxjava2:$archComponentVersion"
+
+
 
     ]
+
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
