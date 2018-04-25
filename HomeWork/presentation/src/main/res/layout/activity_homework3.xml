@@ -1,41 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
     <data>
+        <import
+            alias="view"
+            type="android.view.View" />
+
         <variable
             name="viewModel"
             type="com.itacademy.presentation.presentation.screens.homework3.HW3ViewModel"/>
     </data>
-<LinearLayout
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
-    <Button
-        android:id="@+id/buttonImage"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        android:onClick="@{()->viewModel.onClick()}"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="235dp"
-        android:src="@{viewModel.url}"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите ссылку на картинку"
+            android:text="@{viewModel.userUrl}" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autoLink="web"
-        android:hint="Введите ссылку на картинку"
-        android:gravity="center"
-        android:inputType="textUri"
-        android:text="@={viewModel.userUrl}"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@{viewModel.userUrl}" />
 
-    <ProgressBar
-        android:layout_width="70dp"
-        android:layout_height="69dp"
-        android:visibility="@{viewModel.progress? view.INVISIBLE:view.VISIBLE}" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-</LinearLayout>
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/btn_add"
+                android:onClick="@{()->viewModel.onClick()}" />
+
+            <ProgressBar
+                android:layout_width="70dp"
+                android:layout_height="69dp"
+                android:visibility="@{viewModel.progress? view.INVISIBLE:view.VISIBLE}" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@{viewModel.url}"/>
+            <!--bind:error="@{@drawable/error}"/>-->
+
+
+    </LinearLayout>
 </layout>

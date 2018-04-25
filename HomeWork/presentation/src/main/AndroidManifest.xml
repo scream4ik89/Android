@@ -23,39 +23,35 @@
         </activity>
         <activity
             android:name=".presentation.screens.homework1.HomeWork1Activity"
-            android:parentActivityName=".presentation.screens.homework_switch.SwitcherActivity" />
+            android:finishOnTaskLaunch="true" />
         <activity
-            android:name=".presentation.screens.homework2.HomeWork2Activity"
-            android:parentActivityName=".presentation.screens.homework_switch.SwitcherActivity" />
+            android:name=".presentation.screens.homework2.HomeWork2Activity"/>
         <activity
-            android:name=".presentation.screens.homework3.HomeWork3Activity"
-            android:parentActivityName=".presentation.screens.homework_switch.SwitcherActivity" />
+            android:name=".presentation.screens.homework3.HomeWork3Activity"/>
         <activity
-            android:name=".presentation.screens.homework4.HomeWork4Activity"
-            android:parentActivityName=".presentation.screens.homework_switch.SwitcherActivity" />
+            android:name=".presentation.screens.homework4.HomeWork4Activity"/>
         <activity
-            android:name=".presentation.screens.homework4.HomeWork4_1Activity"
-            android:parentActivityName=".presentation.screens.homework4.HomeWork4Activity" />
-        <activity
-            android:name=".presentation.screens.homework4.HomeWork4_2Activity"
-            android:parentActivityName=".presentation.screens.homework4.HomeWork4Activity" />
-        <activity
-            android:name=".presentation.screens.homework5.HomeWork5Activity"
-            android:parentActivityName=".presentation.screens.homework_switch.SwitcherActivity" />
-        <activity
-            android:name=".presentation.screens.homework6.HomeWork6Activity"
-            android:parentActivityName=".presentation.screens.homework_switch.SwitcherActivity" />
-        <activity
-            android:name=".presentation.screens.homework7.HomeWork7Activity"
-            android:parentActivityName=".presentation.screens.homework_switch.SwitcherActivity" />
-        <activity
-            android:name=".presentation.screens.homework8.HomeWork8Activity"
-            android:parentActivityName=".presentation.screens.homework_switch.SwitcherActivity"
-            android:exported="true"/>
+            android:name=".presentation.screens.homework5.HomeWork5Activity"/>
         <service
             android:name=".presentation.screens.homework5.MyServiceWiFi"
             android:enabled="true"
             android:exported="false" />
+
+        <activity
+            android:name=".presentation.screens.homework6.HomeWork6Activity"/>
+        <activity
+            android:name=".presentation.screens.homework7.HomeWork7Activity"/>
+        <activity
+            android:name=".presentation.screens.homework8.HomeWork8Activity"/>
+        <activity
+            android:name=".presentation.screens.homework9.HomeWork9Activity"/>
+        <activity
+            android:name=".presentation.screens.homework10.HomeWork10Activity"/>
+        <activity
+            android:name=".presentation.screens.homework10_1.HomeWork10_1Activity"/>
+        <activity
+            android:name=".presentation.screens.homework10_2.HomeWork10_2Activity"/>
+
     </application>
 
 </manifest>

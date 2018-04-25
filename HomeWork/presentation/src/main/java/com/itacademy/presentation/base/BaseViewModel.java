@@ -15,6 +15,9 @@ public abstract class BaseViewModel extends ViewModel{
 
     public abstract void createInject();
 
+
+    public void onCreate(){}
+
     public void onStart(){}
 
     public void onResume(){}
@@ -22,6 +25,8 @@ public abstract class BaseViewModel extends ViewModel{
     public void onPause(){}
 
     public void onStop(){}
+
+    public void onDestroy(){}
 
     @Override
     protected void onCleared() { //аналог onDestroy.вызывается когда уничтожается активити

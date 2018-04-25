@@ -10,4 +10,6 @@
     <color name="colorWhite">#ffffff</color>
     <color name="colorGreen">#02541c</color>
     <color name="colorDarkRed">#630205</color>
+    <color name="colorMale">#016dfa</color>
+    <color name="colorFemale">#aa16ba</color>
 </resources>

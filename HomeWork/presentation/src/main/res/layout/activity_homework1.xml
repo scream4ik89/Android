@@ -14,27 +14,28 @@
     android:background="#9999f5">
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:text="@{()->viewModel.textView1}"
-        android:background="#88ec92"
-        android:gravity="center"/>
+        android:clickable="true"
+        android:onClick="@{()->viewModel.swapText()}"
+        android:padding="50dp"
+        android:text="@{viewModel.textView1}"
+        android:textSize="20sp" />
 
     <TextView
-        android:layout_margin="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:id="@+id/textview2"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:background="#ec585f"
-        android:gravity="center"
-        android:text="@{()->viewModel.textView2}" />
+        android:clickable="true"
+        android:onClick="@{()->viewModel.swapText()}"
+        android:padding="50dp"
+        android:text="@{viewModel.textView2}"
+        android:textSize="20sp" />
 
     <Button
-        android:onClick="@{()->viewModel.switchText}"
+        android:onClick="@{()->viewModel.swapText()}"
         android:layout_margin="25dp"
-        android:id="@+id/button_switch"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

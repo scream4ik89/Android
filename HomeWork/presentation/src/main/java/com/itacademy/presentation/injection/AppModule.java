@@ -1,41 +1,51 @@
 package com.itacademy.presentation.injection;
 
 
+import android.arch.persistence.room.Room;
 import android.content.Context;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.itacademy.data.repository.UserRepositoryImpl;
+import com.itacademy.data.dataBase.AppDataBase;
+import com.itacademy.data.repository.UserProfieleRepositoryImpl;
+
+import com.itacademy.data.rest.ErrorTransformers;
 import com.itacademy.data.rest.RestApi;
 import com.itacademy.data.rest.RestService;
 import com.itacademy.domain.executor.PostExecutionThread;
-import com.itacademy.domain.repository.UserRepository;
-import com.itacademy.presentation.BuildConfig;
+import com.itacademy.domain.repository.UserProfileRepository;
+
 import com.itacademy.presentation.executor.UIThread;
 
-import java.util.concurrent.TimeUnit;
+
 
 import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import okhttp3.OkHttpClient;
-import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
+
+import static com.itacademy.presentation.constant.Constant.URL_FOR_RETROFIT;
+import static com.itacademy.presentation.constant.Constant.URL_MY_RETROFIT;
 
 @Module
 public class AppModule {
 
     Context context;
+    Retrofit retrofit;
+    public static final String DATA_BASE_NAME = "database";
 
     public AppModule(Context context) {
         this.context = context;
     }
 
     @Provides
-    @Singleton
+    @Singleton//что бы потом предоставить контекст в конструктор, необхдим метод
+    //даггер будет во возвращаемому значению искать у себся в классе подходящий объект
+    //так же необходимо пометить конструктор того класс который будет собран даггером анотацией
+    //Inject
     public Context getContext() {
         return context;
     }
@@ -46,32 +56,34 @@ public class AppModule {
         return new UIThread();
     }
 
-//    @Binds
-//    public abstract PostExecutionThread getUiThread(UIThread uiThread);
-// альтернативный метод передачи методов в Даггер. тоже самое что и сверху
-
     @Provides
     @Singleton
-    public UserRepository getUserRepository(Context context, RestService restService) {
-        return new UserRepositoryImpl(context, restService);
+    public UserProfileRepository getUserProfileRepository(RestService restService, AppDataBase appDataBase) {
+
+        return new UserProfieleRepositoryImpl(restService, appDataBase);
     }
 
     @Provides
     @Singleton
+    public RestService getRestService(RestApi restAPI, ErrorTransformers errorTransformers) {
+        return new RestService(restAPI, errorTransformers);
+    }
+
+    @Provides
+    @Singleton//будет создан объект ретрофит на базен нашего интерфейса(т.е. с нашей реализацией)
     public RestApi getRestApi(Retrofit retrofit) {
         return retrofit.create(RestApi.class);
     }
 
     @Provides
     @Singleton
-    public Retrofit getRetrofit(OkHttpClient okHttpClient, Gson gson) {
+    public Retrofit getRetrofit(Gson gson) {
         return new Retrofit.Builder()
-                .baseUrl("https://api.backendless.com/8125A25A-18B7-D092-FFC9-22B2FB842700/8A0FDC45-8157-9553-FFFF-7CDF7394A100/")
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create(gson))
-                .client(okHttpClient)
+                //.baseUrl("https://api.backendless.com/8125A25A-18B7-D092-FFC9-22B2FB842700/8A0FDC45-8157-9553-FFFF-7CDF7394A100/")
+                .baseUrl(URL_FOR_RETROFIT)//Взять из билд конфиг
                 .build();
-
     }
 
     @Provides
@@ -83,20 +95,9 @@ public class AppModule {
 
     @Provides
     @Singleton
-    //библиотека для настройки отправки или получения файлов в интернет
-    public OkHttpClient getOkHttp(){
-        OkHttpClient.Builder builder = new OkHttpClient.Builder();
-
-        builder.readTimeout(10, TimeUnit.SECONDS)
-                .writeTimeout(10, TimeUnit.SECONDS)
-                .connectTimeout(10, TimeUnit.SECONDS);
-
-        if(BuildConfig.DEBUG) {
-            HttpLoggingInterceptor hli = new
-                    HttpLoggingInterceptor();
-            hli.setLevel(HttpLoggingInterceptor.Level.BODY);
-            builder.addInterceptor(hli);
-        }
-        return builder.build();
+    public AppDataBase getAppDataBase(Context context) {
+        return Room.databaseBuilder(context, AppDataBase.class, DATA_BASE_NAME)
+                .fallbackToDestructiveMigration()
+                .build();
     }
 }

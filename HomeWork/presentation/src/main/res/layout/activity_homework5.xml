@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.itacademy.presentation.presentation.screens.homework5.HW5ViewModel"/>
+    </data>
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@{viewModel.connectWi_Fi}" />
+
     <Button
-    android:layout_width="100dp"
-    android:layout_height="100dp"
-    android:id="@+id/WiFiOn"
-    android:layout_gravity="center"
-    android:text="Wi-Fi On/Off"
-    android:gravity="center"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="@{()->viewModel.switchOnWiFi()}"
+        android:text="enable_wifi" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="@{()->viewModel.switchOffWiFi()}"
+        android:text="switch_off" />
 
 </LinearLayout>
+</layout>

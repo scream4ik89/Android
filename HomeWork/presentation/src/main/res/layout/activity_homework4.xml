@@ -6,28 +6,32 @@
             type="com.itacademy.presentation.presentation.screens.homework4.HomeWork4ViewModel"/>
     </data>
 <LinearLayout
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#145">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <Button
-        android:layout_marginTop="50dp"
-        android:id="@+id/dz4_1"
+    <com.itacademy.homework.homework4.HomeWork4View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DZ 4_1"
-        android:textAllCaps="false"
-        android:textSize="25dp"
-        android:background="#328de9"/>
+        android:orientation="horizontal">
 
-    <Button
-        android:layout_marginTop="50dp"
-        android:id="@+id/dz4_2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="DZ 4_2"
-        android:textAllCaps="false"
-        android:textSize="25dp"
-        android:background="#328de9"/>
+        <ImageView
+            android:id="@+id/frameSova1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="start"
+            android:layout_marginRight="50dp"/>
+
+        <ImageView
+            android:id="@+id/frameSova2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="end" />
+    </LinearLayout>
+
 </LinearLayout>
 </layout>

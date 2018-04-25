@@ -2,28 +2,32 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion = rootProject.buildToolsSdkVersion
+
+
 
     defaultConfig {
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
 
+
+
     }
 
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            minifyEnabled true
         }
     }
 
 }
 
 dependencies {
-
     def dependency = rootProject.ext.dependencies
 
     implementation dependency.javaxInject
 
-    api dependency.rxjava2
+    api dependency.rxJava2
+
 
 }

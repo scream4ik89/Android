@@ -12,6 +12,9 @@ import com.itacademy.presentation.base.BaseMvvmActivity;
 import com.itacademy.presentation.base.BaseViewModel;
 import com.itacademy.presentation.databinding.ActivitySwitchBinding;
 import com.itacademy.presentation.presentation.screens.homework1.HomeWork1Activity;
+import com.itacademy.presentation.presentation.screens.homework10.HomeWork10Activity;
+import com.itacademy.presentation.presentation.screens.homework10_1.HomeWork10_1Activity;
+import com.itacademy.presentation.presentation.screens.homework10_2.HomeWork10_2Activity;
 import com.itacademy.presentation.presentation.screens.homework2.HomeWork2Activity;
 import com.itacademy.presentation.presentation.screens.homework3.HomeWork3Activity;
 import com.itacademy.presentation.presentation.screens.homework4.HomeWork4Activity;
@@ -19,6 +22,7 @@ import com.itacademy.presentation.presentation.screens.homework5.HomeWork5Activi
 import com.itacademy.presentation.presentation.screens.homework6.HomeWork6Activity;
 import com.itacademy.presentation.presentation.screens.homework7.HomeWork7Activity;
 import com.itacademy.presentation.presentation.screens.homework8.HomeWork8Activity;
+import com.itacademy.presentation.presentation.screens.homework9.HomeWork9Activity;
 
 public class SwitcherActivity extends BaseMvvmActivity<ActivitySwitchBinding, BaseViewModel> implements View.OnClickListener {
 
@@ -49,6 +53,7 @@ public class SwitcherActivity extends BaseMvvmActivity<ActivitySwitchBinding, Ba
         binding.dz9.setOnClickListener(this);
         binding.dz10.setOnClickListener(this);
         binding.dz11.setOnClickListener(this);
+        binding.dz12.setOnClickListener(this);
 
     }
         @Override
@@ -88,14 +93,22 @@ public class SwitcherActivity extends BaseMvvmActivity<ActivitySwitchBinding, Ba
                     intent = new Intent(this, HomeWork8Activity.class);
                     startActivity(intent);
                     break;
-//                case R.id.dz9:
-//                    intent = new Intent(this, Home.class);
-//                    startActivity(intent);
-//                    break;
-//                case R.id.dz10:
-//                    intent = new Intent(this, HW10.class);
-//                    startActivity(intent);
-//                    break;
+                case R.id.dz9:
+                    intent = new Intent(this, HomeWork9Activity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.dz10:
+                    intent = new Intent(this, HomeWork10Activity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.dz11:
+                    intent = new Intent(this, HomeWork10_1Activity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.dz12:
+                    intent = new Intent(this, HomeWork10_2Activity.class);
+                    startActivity(intent);
+                    break;
 
             }
         }

@@ -45,22 +45,16 @@ dependencies {
     implementation dependency.supportDesign
     implementation dependency.supportV4
 
-    implementation dependency.rxjava2Android
-
+    implementation dependency.rxAndroid
+    implementation dependency.gson
+    implementation dependency.picasso
     implementation dependency.archComponentsExtention
-    annotationProcessor dependency.archComponentsCompiler
 
     implementation dependency.dagger
-    annotationProcessor dependency.daggerCompiler
-    implementation dependency.gson
-
-    implementation 'com.squareup.picasso:picasso:2.5.2'
-
-    /*это компилятор и его нужно подключпть подругому*/
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    annotationProcessor dependency.androidBindingCompiler
     implementation dependency.adapterRX2
     implementation dependency.converterGson
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    annotationProcessor dependency.daggerCompiler
 
 
 

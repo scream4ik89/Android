@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 
 
 import com.itacademy.domain.entity.UserEntity;
@@ -49,8 +50,8 @@ public class UserActivity extends BaseMvpActivity<UserPresenter, UserRouter>
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(presenter.getUserAdapter());
+                presenter.onUserClick();
 
-        presenter.onUserClick();
 
     }
 

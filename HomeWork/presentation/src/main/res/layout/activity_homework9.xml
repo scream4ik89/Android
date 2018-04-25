@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import
+            alias="V"
+            type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.itacademy.presentation.presentation.screens.homework9.UserViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background='@{viewModel.isSex ? @color/colorMale: @color/colorFemale}'
+        android:padding="8dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignBottom="@+id/view"
+            android:layout_alignStart="@+id/imgIcon"
+            android:layout_marginStart="18dp"
+            android:visibility="@{viewModel.loadUser ? V.INVISIBLE : V.VISIBLE}" />
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:src="@{viewModel.url}"/>
+            <!--bind:error="@{@drawable/sova_anmation_1}" -->
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgIcon"
+            android:text='@{"Full name:\n" + viewModel.name + " " + viewModel.surName}'
+            android:textSize="20sp"
+            tools:text="Full Name of a worker" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textName"
+            android:layout_toEndOf="@id/imgIcon"
+            android:text='@{"Age: " + String.valueOf(viewModel.age)}'
+            android:textSize="20sp"
+            android:visibility="@{viewModel.age == 0 ? V.INVISIBLE: V.VISIBLE}" />
+
+        <TextView
+            android:id="@+id/textSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/age"
+            android:layout_toEndOf="@id/imgIcon"
+            android:text="Sex:"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/age"
+            android:layout_toEndOf="@id/textSex"
+            android:entries="@array/sexSpinner"
+            android:spinnerMode="dropdown"
+            bind:selectedValue="@={viewModel.isSex}" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/textSex"
+            android:layout_toEndOf="@id/imgIcon"
+            android:background="@drawable/sova_anmation_1"
+            android:visibility="@{18 > viewModel.age ? V.INVISIBLE : V.VISIBLE}" />
+
+
+    </RelativeLayout>
+</layout>

@@ -9,16 +9,20 @@ import com.itacademy.presentation.injection.DaggerAppComponent;
 
 public class App extends Application{
 
-    private static AppComponent appComponent;
-
-    public static AppComponent getAppComponent() {
-        return appComponent;
-    }
+    private static AppComponent appComponent;//реализовываем интефейс AppComponent(там указаны классы
+    //в которых необходимо произвести сборку объектов)
+    //
 
     @Override
     public void onCreate() {
         super.onCreate();
+        appComponent = DaggerAppComponent.builder()//теперь указываем как собрать интефейс AppComponent
+                .appModule(new AppModule(this))//как его собрать указано в AppModule
+                .build();//в AppModule описывается как собирать классы интефейса AppComponent
 
-        appComponent = DaggerAppComponent.builder().appModule(new AppModule(this)).build();
+    }
+
+    public static AppComponent getAppComponent() {
+        return appComponent;
     }
 }

@@ -7,7 +7,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.0'
+        classpath 'com.android.tools.build:gradle:3.0.1'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -26,55 +26,41 @@ ext{
     targetSdkVersion = 27
 
     buildToolsSdkVersion = '27.0.2'
-    rxjava2AndroidVerson = '2.0.2'
-    rxjava2Verson = '2.1.10'
-    gsonVersion = '2.8.2'
-    dataBindingVersion = '3.0.0'
-
+    realmLibraryVersion = '0.87.4'
+    picassoVersion = '2.5.2'
+    leakcanaryVerson = '1.5.4'
+    rxAndroidVersion = '2.0.2'
+    rxJavaVerson = '2.1.10'
+    gsonVerson = '2.8.0'
     archComponentVersion = '1.0.0'
-
     daggerVersion = '2.15'
     javaInjectVersion = '1'
     retrofit2 = '2.4.0'
     adapterRXVerson = '2.2.0'
     converterGsonVerson = '2.3.0'
-    okhttpVersion = '3.10.0'
     dependencies = [
 
-            supportAppcompat: "com.android.support:appcompat-v7:$buildToolsSdkVersion",
-            supportDesign: "com.android.support:design:$buildToolsSdkVersion",
-            supportV4: "com.android.support:support-v4:$buildToolsSdkVersion",
-
-            rxjava2Android: "io.reactivex.rxjava2:rxandroid:$rxjava2AndroidVerson",
-            rxjava2: "io.reactivex.rxjava2:rxjava:$rxjava2Verson",
-
-            //гугловская библиотека для создания мввм, что бы вью модел не уничтожалась при
-            //повороте экрана archComponent
+            supportAppcompat       : "com.android.support:appcompat-v7:$buildToolsSdkVersion",
+            supportDesign          : "com.android.support:design:$buildToolsSdkVersion",
+            supportV4              : "com.android.support:support-v4:$buildToolsSdkVersion",
+            picasso                : "com.squareup.picasso:picasso:$picassoVersion",
+            leakcanary             : "com.squareup.leakcanary:leakcanary-android:$leakcanaryVerson",
+            rxAndroid              : "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion",
+            rxJava2                : "io.reactivex.rxjava2:rxjava:$rxJavaVerson",
+            gson                   : "com.google.code.gson:gson:$gsonVerson",
             archComponentsExtention: "android.arch.lifecycle:extensions:$archComponentVersion",
-            archComponentsCompiler:  "android.arch.lifecycle:compiler:$archComponentVersion",
-
-            gson: "com.google.code.gson:gson:$gsonVersion",
-
-            //с этой библиотекой xml знает о активити(подписыватся на изменения активити)
-            androidBindingCompiler: "com.android.databinding:compiler:$dataBindingVersion",
-
-            dagger: "com.google.dagger:dagger:$daggerVersion",
-            daggerCompiler: "com.google.dagger:dagger-compiler:$daggerVersion",
-            //шаблон по которуму посторен dagger
-            //дата и домен не знают что управляются через даггер, даггер просто реализует
-            //шаблоны javaxInject
-            javaxInject: "javax.inject:javax.inject:${javaInjectVersion}",
-            retrofit2: "com.squareup.retrofit2:retrofit:$retrofit2",
-            //что бы ретрофит работал с рх
-            adapterRX2: "com.squareup.retrofit2:adapter-rxjava2:$adapterRXVerson",
-            //что бы ретрофит работал с гссн
-            converterGson: "com.squareup.retrofit2:converter-gson:$converterGsonVerson",
-            //что бы видеть логи и обрабатывать ошибки в ретрофите
-            okHttp: "com.squareup.okhttp3:okhttp:$okhttpVersion",
-            okHttpLogging: "com.squareup.okhttp3:logging-interceptor:$okhttpVersion",
-
-             glide: "com.github.bumptech.glide:glide:$glideVersion",
-             glideCompiller: "com.github.bumptech.glide:compiler:$glideVersion"
+            archComponentsCompiler : "android.arch.lifecycle:compiler:$archComponentVersion",
+            dagger                 : "com.google.dagger:dagger:$daggerVersion",
+            daggerCompiler         : "com.google.dagger:dagger-compiler:$daggerVersion",
+            javaxInject            : "javax.inject:javax.inject:$javaInjectVersion",
+            retrofit2              : "com.squareup.retrofit2:retrofit:$retrofit2",
+            adapterRX2             : "com.squareup.retrofit2:adapter-rxjava2:$adapterRXVerson",
+            converterGson          : "com.squareup.retrofit2:converter-gson:$converterGsonVerson",
+            room                   : "android.arch.persistence.room:runtime:$archComponentVersion",
+            roomProcessor          : "android.arch.persistence.room:compiler:$archComponentVersion",
+            adaptRXRoom            : "android.arch.persistence.room:rxjava2:$archComponentVersion",
+            glide                  : "com.github.bumptech.glide:glide:$glideVersion",
+            glideCompiller         : "com.github.bumptech.glide:compiler:$glideVersion"
 
     ]
 }

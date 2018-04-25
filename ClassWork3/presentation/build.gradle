@@ -9,17 +9,54 @@ android {
         targetSdkVersion rootProject.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    signingConfigs {
+        debug {
+            storeFile file('../key.jks')
+            storePassword '02051998'
+            keyAlias 'key0'
+            keyPassword '02051998'
+        }
+//        release { FIXME
+//            storeFile file('../key.jks')
+//        storePassword '02051998'
+//        keyAlias 'key0'
+//        keyPassword '02051998'
+//        }
+    }
     buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
         release {
+            signingConfig signingConfigs.debug //FIXME
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    flavorDimensions "typeVersion"
+    productFlavors {
+
+        dev {
+            dimension "typeVersion"
+            buildConfigField "String", "API_URL", "\" http://test\""
+        }
+
+        live {
+            dimension "typeVersion"
+            buildConfigField "String", "API_URL", "\" http://live\""
+        }
+
+    }
     dataBinding {
         enabled = true
     }
+
     buildToolsVersion '27.0.3'
 }
 /*Верисии библиотек должны быть одинаковы или могут возникнуть проблемы v27.0.2*/
@@ -31,22 +68,30 @@ dependencies {
     implementation dependency.supportDesign
     implementation dependency.supportV4
 
-    implementation dependency.rxjava2Android
-
-    implementation dependency.archComponentsExtention
-    annotationProcessor dependency.archComponentsCompiler
-
-    implementation dependency.dagger
-    annotationProcessor dependency.daggerCompiler
+    implementation 'com.google.android.gms:play-services-location:15.0.0'
+    implementation 'com.google.android.gms:play-services-maps:15.0.0'
+    implementation dependency.supportAppcompat
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation dependency.rxAndroid
     implementation dependency.gson
+    implementation dependency.picasso
+    implementation dependency.archComponentsExtention
 
-    implementation 'com.squareup.picasso:picasso:2.5.2'
-
-    /*это компилятор и его нужно подключпть подругому*/
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    annotationProcessor dependency.androidBindingCompiler
+    implementation dependency.rxPermission
+    implementation dependency.dagger
     implementation dependency.adapterRX2
     implementation dependency.converterGson
+    implementation dependency.constraintLayout
+
+    annotationProcessor dependency.daggerCompiler
+
+    implementation dependency.pushNotification
+
+
+    implementation dependency.glide
+    annotationProcessor dependency.glideCompiller
 
     api project(path: ':data')
 

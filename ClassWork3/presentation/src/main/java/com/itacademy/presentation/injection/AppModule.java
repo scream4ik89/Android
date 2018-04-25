@@ -22,7 +22,6 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 import okhttp3.OkHttpClient;
-import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -80,12 +79,11 @@ public class AppModule {
 
     @Provides
     @Singleton
-    public Retrofit getRetrofit(OkHttpClient okHttpClient, Gson gson) {
+    public Retrofit getRetrofit(Gson gson) {
        return new Retrofit.Builder()
                .baseUrl(BACKENDLESS_KEY)
                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                .addConverterFactory(GsonConverterFactory.create(gson))
-               .client(okHttpClient)
                .build();
 
     }
@@ -97,22 +95,4 @@ public class AppModule {
                 .create();
     }
 
-    @Provides
-    @Singleton
-    //библиотека для настройки отправки или получения файлов в интернет
-    public OkHttpClient getOkHttp(){
-        OkHttpClient.Builder builder = new OkHttpClient.Builder();
-
-        builder.readTimeout(10, TimeUnit.SECONDS)
-                .writeTimeout(10, TimeUnit.SECONDS)
-                .connectTimeout(10, TimeUnit.SECONDS);
-
-        if(BuildConfig.DEBUG) {
-            HttpLoggingInterceptor hli = new
-            HttpLoggingInterceptor();
-            hli.setLevel(HttpLoggingInterceptor.Level.BODY);
-            builder.addInterceptor(hli);
-        }
-        return builder.build();
-    }
 }
