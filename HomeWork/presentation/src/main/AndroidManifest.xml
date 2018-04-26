@@ -51,6 +51,9 @@
             android:name=".presentation.screens.homework10_1.HomeWork10_1Activity"/>
         <activity
             android:name=".presentation.screens.homework10_2.HomeWork10_2Activity"/>
+        <activity
+            android:name=".presentation.screens.homework11.HomeWork11Activity"/>
+
 
     </application>
 

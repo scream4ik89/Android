@@ -54,6 +54,7 @@ public class SwitcherActivity extends BaseMvvmActivity<ActivitySwitchBinding, Ba
         binding.dz10.setOnClickListener(this);
         binding.dz11.setOnClickListener(this);
         binding.dz12.setOnClickListener(this);
+        binding.dz13.setOnClickListener(this);
 
     }
         @Override
@@ -106,6 +107,10 @@ public class SwitcherActivity extends BaseMvvmActivity<ActivitySwitchBinding, Ba
                     startActivity(intent);
                     break;
                 case R.id.dz12:
+                    intent = new Intent(this, HomeWork10_2Activity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.dz13:
                     intent = new Intent(this, HomeWork10_2Activity.class);
                     startActivity(intent);
                     break;

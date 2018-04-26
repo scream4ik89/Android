@@ -8,7 +8,7 @@ import com.itacademy.presentation.injection.AppModule;
 import com.itacademy.presentation.injection.DaggerAppComponent;
 
 public class App extends Application{
-
+    public static final String APP_PREFERENCES = "mysettings";
     private static AppComponent appComponent;//реализовываем интефейс AppComponent(там указаны классы
     //в которых необходимо произвести сборку объектов)
     //

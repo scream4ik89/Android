@@ -9,4 +9,8 @@
         <item>Male</item>
         <item>Female</item>
     </string-array>
+    <string name="avatar">Avatar</string>
+    <string name="avatar_desc">This is avatar</string>
+    <string name="name_desc">This is user name</string>
+    <string name="age_desc">This is user age</string>
 </resources>
